@@ -288,6 +288,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="acceptButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>630</x>
@@ -471,7 +474,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Current # of casters:</string>
+     <string>Current # of players:</string>
     </property>
    </widget>
    <widget class="QLabel" name="numCastersLabel">
