@@ -20,6 +20,7 @@ wtb::wtb(QWidget *parent, Qt::WFlags flags)
     connect(ui.acceptButton, SIGNAL(released()), this, SLOT(accept()));
     connect(ui.rerollButton, SIGNAL(released()), this, SLOT(reroll()));
     connect(ui.newRoundButton,SIGNAL(released()),this,SLOT(newRound()));
+    connect(ui.playerListButton,SIGNAL(released()),this,SLOT(showPlayerListWindow()));
 
     std::string line;
     std::ifstream casterFile("casters.txt");
@@ -117,6 +118,12 @@ void wtb::roll(FactionTypes curFaction)
         return;
     }
 
+    if(factions.at(randFaction).size() == 0)
+    {
+        roll(curFaction);
+        return;
+    }
+
     for(int i = 0; i < curCasters.size(); i ++)
     {
         if(curCasters.at(i).compare(factions.at(randFaction).at(randCaster)) == 0)
@@ -125,9 +132,6 @@ void wtb::roll(FactionTypes curFaction)
             return;
         }
     }
-    
-
-    ui.casterResult->setText(QString::fromStdString(factions.at(randFaction).at(randCaster)));
     
 
     
@@ -206,16 +210,25 @@ void wtb::roll(FactionTypes curFaction)
             break;
         }
     }
+
+    ui.acceptButton->setEnabled(true);
     
 }
 
 void wtb::accept()
 {
     curCasters.push_back(factions.at(randFaction).at(randCaster));
+    if(ui.playerNameBox->text().compare("") == 0)
+    {
+        ui.playerNameBox->setText("Player " + QString::fromStdString(std::to_string((long long)m_NumCasters)));
+    }
+    playerMap[ui.playerNameBox->text().toStdString()] = factions.at(randFaction).at(randCaster);
     ui.factionResult->setText("Caster added to round!");
     ui.casterResult->setText("PICK YOUR FACTION");
     m_NumCasters++;
     ui.numCastersLabel->setText(QString::number(m_NumCasters));
+    ui.playerNameBox->setText("");
+    ui.acceptButton->setDisabled(true);
 
 }
 
@@ -227,8 +240,50 @@ void wtb::reroll()
 void wtb::newRound()
 {
     curCasters.clear();
+    playerMap.clear();
     ui.factionResult->setText("New Round Started!");
     ui.casterResult->setText("PICK YOUR FACTION");
     ui.numCastersLabel->setText("0");
+    ui.playerNameBox->setText("");
     m_NumCasters = 0;
+}
+
+void wtb::showPlayerListWindow()
+{
+    wchar_t* command = L"open";
+    wchar_t* file = L"PlayerList.html";
+    writePlayerFile();
+    ShellExecute(NULL, command, file, NULL, NULL, SW_SHOWNORMAL);
+}
+
+void wtb::writePlayerFile()
+{
+    std::ofstream file("PlayerList.html");
+
+    if(file.is_open())
+    {
+        file << "<html>";
+        file << "   <body>";
+        file << "       <table border=\"1\" style=\"width:50%\">";
+
+        std::map<std::string, std::string>::iterator it;
+        
+        for(it = playerMap.begin(); it != playerMap.end() ; it ++)
+        {
+            file << "           <tr>";
+            file << "               <td>" + it->first + "</td>";
+            file <<"                <td>" + it->second + "</td>";
+            file << "           </tr>";
+        }
+
+        file << "       </table>";
+        file << "   </body>";
+        file << "</html>";
+        file.close();
+    }
+    else
+    {
+        std::cout << "Unable to open file.";
+    }
+    return;
 }

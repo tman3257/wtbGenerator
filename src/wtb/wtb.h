@@ -8,6 +8,9 @@
 #include <fstream>
 #include <string>
 #include <ctime>
+#include "PlayerWindow.h"
+#include <windows.h>
+#include <tchar.h>
 
 class wtb : public QMainWindow
 {
@@ -51,6 +54,8 @@ public slots:
     void accept();
     void reroll();
     void newRound();
+    void showPlayerListWindow();
+    void writePlayerFile();
 
 public:
     
@@ -62,6 +67,10 @@ public:
     int randCaster;
     FactionTypes m_CurFaction;
     int m_NumCasters;
+    PlayerWindow playerWindow;
+    std::map <std::string, std::string> playerMap;
+    
+
     
 
     void roll(FactionTypes curFaction);

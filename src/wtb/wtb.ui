@@ -498,6 +498,56 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLineEdit" name="playerNameBox">
+    <property name="geometry">
+     <rect>
+      <x>612</x>
+      <y>280</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>260</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player Name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playerListButton">
+    <property name="geometry">
+     <rect>
+      <x>614</x>
+      <y>42</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player List</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

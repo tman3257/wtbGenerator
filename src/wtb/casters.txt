@@ -1,36 +1,167 @@
 #Cygnar
-Haley
-Stryker
+Constance Blaize
+Siege
+Caine 1
+Caine 2
+Darius
+Haley 1
+Haley 2
+Haley 3
+Kraye
+Nemo 1
+Nemo 2
+Nemo 3
+Kara Sloan
+Striker 1
+Striker 2
+Striker 3
+Sturgis
 #Menoth
-Kreoss
-Feora
+Anson Durst
+Severius 1
+Severius 2
+Amon Ad'Raza
+Reznik 1
+Reznik 2
+Kreoss 1
+Kreoss 2
+Kreoss 3
+High Reclaimer
+Testament of Menoth
+Feora 1
+Feora 2
+Thyra
+Vindictus
 #Khador
-Butcher
-Sorcha
+Butcher 1
+Butcher 2
+Butcher 3
+Sorscha 1
+Sorscha 2
+Vlad 1
+Vlad 2
+Vlad 3
+Irusk
+Zerkova 1
+Zerkova 2
+Karchev
+The Old Witch of Khador
+Strakhov
+Harkevich
 #Cryx
-Gaspy
-Goreshade
+Asphyxious 1
+Asphyxious 2
+Asphyxious 3
+Deneghra 1
+Deneghra 2
+Deneghra 3
+Goreshade 1
+Goreshade 2
+Goreshade 3
+Mortenebra
+Scaverous
+Skarre 1
+Skarre 2
+Sturgis the Corrupted
+Terminus
+Venethrax
+The Witch Coven
 #Retribution
-Vyros
 Garryth
+Kaelyssa
+Ossyan
+Rhan
+Ravyn
+Thyron
+Vyros 1
+Vyros 2
+Issyria
 #Mercenaries
-Ashlynn
-Bart
+Ashlynn D'Elyse
+Bartolo Montador
+Damiano
+Drake MacBain
+Durgen Madhammer
+Gorten Grundback
+Fiona the Black
+Magnus 1
+Magnus 2
+Ossrum
+Phinneus Shae
+Exulon Thexus
 #Convergence
+Aurora
 Axis
-Lucant
+Iron Mother Directrix
+Father Lucant
+Syntherion
 #Trolls
+Borka 1
+Borka 2
 Calandra
-Doomshaper
+Grim Angus
+Hunters Grim
+Grissel 1
+Grissel 2
+Gunnbjorn
+Doomshaper 1
+Doomshaper 2
+Jarl Skuld
+Madrak 1
+Madrak 2
 #Circle
-Kruegar
+Baldur 1
+Baldur 2
 Bradigus
+Cassius
+Grayle
+Kaya 1
+Kaya 2
+Kromac 1
+Kromac 2
+Kruegar 1
+Kruegar 2
+Mohsar
+Morvahna 1
+Morvahna 2
 #Skorne
-Rasheth
+Hexeris 1
+Hexeris 2
+Makeda 1
+Makeda 2
+Makeda 3
 Mordikaar
+Morghoul 1
+Morghoul 2
+Naaresh
+Rasheth
+Xerxis 1
+Xerxis 2
+Zaal 1
+Zaal 2
 #Legion
-Vayl
+Absylonia 1
+Absylonia 2
+Bethayne
+Kallus
+Lylyth 1
+Lylyth 2
+Lylyth 3
+Rhyas
 Saeryn
+Saeryn and Rhyas
+Thagrosh 1
+Thagrosh 2
+Vayl 1
+Vayl 2
 #Minions
-Rask
+Barnabas
+Calaban
+Jaga-Jaga
 Maelok
+Rask
+Lord Carver, BMMD, Esq. III
+Dr. Arkadius
+Midas
+Sturm & Drang
+Helga
